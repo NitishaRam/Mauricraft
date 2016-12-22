@@ -10,6 +10,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 
 /**
@@ -23,6 +24,8 @@ public class Edit_Profile extends Activity {
         setContentView(R.layout.edit_profile);
 
         ImageView Home ;
+        Button save;
+
 
 
         Home = (ImageView) findViewById(R.id.iBtnHome);
@@ -35,6 +38,18 @@ public class Edit_Profile extends Activity {
                 startActivity(menu);
             }
         });
+
+        save = (Button) findViewById(R.id.btnSave);
+
+
+        save.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View e) {
+                Intent menu = new Intent(Edit_Profile.this, ArtisanMenu.class);
+                startActivity(menu);
+            }
+        });
+
 
     }
 

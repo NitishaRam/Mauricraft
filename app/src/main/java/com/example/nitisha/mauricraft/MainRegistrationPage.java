@@ -9,7 +9,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 public class MainRegistrationPage extends AppCompatActivity {
-    Button a_Login ,a_Register,ArtisanRegForm;
+    Button a_Login ,a_Register,ArtisanRegForm,Quit;
 
 
 
@@ -46,6 +46,19 @@ public class MainRegistrationPage extends AppCompatActivity {
                     public void onClick(View c) {
                         Intent ArtisanR=new Intent(MainRegistrationPage.this,Register_Artisan.class);
                         startActivity(ArtisanR);
+
+                    }
+                });
+
+                Quit = (Button)findViewById(R.id.btnExit);
+
+                Quit.setOnClickListener(new View.OnClickListener() {
+
+                    @Override
+                    public void onClick(View v) {
+
+                        //Finish method is used to close all open activities.
+                        finish();
 
                     }
                 });
