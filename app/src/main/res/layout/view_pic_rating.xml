@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@drawable/swbg"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:src="@drawable/icon"
+        android:id="@+id/iBtnHome"
+        android:layout_height="70dp"
+        android:layout_width="80dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true" />
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="5dp"
+        android:background="#070707"
+        android:layout_alignStart="@+id/imagebtnprofpic"
+        android:layout_below="@+id/iBtnHome" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile"
+        android:id="@+id/imagebtnprofpic"
+        android:minHeight="150dp"
+        android:minWidth="150dp"
+        android:layout_marginLeft="3dp"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/textView3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Name"
+        android:layout_marginLeft="3dp"
+        android:id="@+id/artisanNameAppears"
+        android:layout_alignBottom="@+id/iBtnHome"
+        android:layout_alignStart="@+id/view1"
+        android:textSize="30sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textSize="25sp"
+        android:minHeight="40dp"
+        android:layout_below="@+id/view1"
+        android:layout_toEndOf="@+id/imagebtnprofpic" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/phone"
+        android:id="@+id/imagebuttoncall"
+        android:clickable="true"
+        android:minHeight="50dp"
+        android:minWidth="50dp"
+        android:layout_alignStart="@+id/textView3"
+        android:layout_toStartOf="@+id/iBtnHome"
+        android:layout_alignParentTop="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/sms"
+        android:id="@+id/imagebtnmessage"
+        android:minHeight="45dp"
+        android:minWidth="49dp"
+        android:layout_toEndOf="@+id/imagebuttoncall"
+        android:layout_alignTop="@+id/artisanNameAppears" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:text="58650143"
+        android:layout_below="@+id/imagebuttoncall" />
+
+    <RatingBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ratingBar"
+        android:layout_below="@+id/imagebtnprofpic"
+        android:layout_toEndOf="@+id/artisanNameAppears" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:ems="10"
+        android:id="@+id/editText9"
+        android:text="58650143"
+        android:layout_below="@+id/view1"
+        android:layout_toStartOf="@+id/imagebtnmessage" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Tel : "
+        android:id="@+id/textView8"
+        android:layout_above="@+id/imagebtnprofpic"
+        android:layout_alignStart="@+id/artisanNameAppears" />
+
+
+</RelativeLayout>

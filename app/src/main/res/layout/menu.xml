@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/swbg">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/exit"
+        android:id="@+id/btnExit"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:background="#fb2020"
+        android:minHeight="40dp"
+        android:minWidth="80dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="22sp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="1dp"
+        android:layout_marginRight="1dp"
+        android:layout_below="@+id/btnExit">
+
+        <!-- Row 1 with single column -->
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:background="@drawable/border"
+            android:divider="#000000"
+            android:layout_marginTop="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:text="@string/menu"
+                android:padding="10dip"
+                android:textColor="#070707"
+                android:textAlignment="center"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+        </TableRow>
+
+        <!-- End of 1 row -->
+
+        <!--  Row 2 -->
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:touchscreenBlocksFocus="true"
+            android:background="#ffffff">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:text="@string/menu_profile"
+                android:padding="9dip"
+                android:layout_weight="1"
+                android:textColor="#070707"
+                android:textAlignment="center"
+                android:background="@drawable/border" />
+
+        </TableRow>
+
+        <!-- End of row 2 -->
+
+        <!-- Row 3 picture -->
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal"
+            android:textAlignment="center"
+            android:touchscreenBlocksFocus="true">
+
+            <ImageView android:src="@drawable/profile"
+                android:clickable="true"
+                android:id="@+id/picProfile"
+                android:scaleType="fitCenter"
+                android:layout_width="130dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"/>
+
+        </TableRow>
+        <!-- End of row 3 -->
+
+
+        <!-- Start of Row 4 -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="@string/menu_camera"
+                android:id="@+id/camera"
+                android:textColor="#070707"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:background="@drawable/border"
+                android:padding="9dip"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="@string/menu_view"
+                android:id="@+id/uploads"
+                android:textColor="#070707"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:background="@drawable/border"
+                android:padding="9dip"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+        </TableRow>
+        <!-- End of row 4 -->
+
+        <!-- Start Row 5 -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <ImageView android:src="@drawable/camera"
+                android:clickable="true"
+                android:id="@+id/picCamera"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"/>
+
+            <ImageView android:src="@drawable/picture"
+                android:clickable="true"
+                android:id="@+id/picPicture"
+                android:layout_width="110dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" />
+
+        </TableRow>
+        <!-- End of row 4 -->
+
+        <!-- Start Row 6 -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <TextView
+                android:text="@string/menu_help"
+                android:id="@+id/Help"
+                android:textColor="#070707"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:background="@drawable/border"
+                android:padding="9dip"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:text="@string/menu_rating"
+                android:id="@+id/Rating"
+                android:textColor="#070707"
+                android:textSize="19sp"
+                android:textStyle="italic"
+                android:background="@drawable/border"
+                android:padding="9dip"
+                android:textAlignment="center"
+                android:layout_weight="1"/>
+        </TableRow>
+        <!-- End Row 6 -->
+
+
+        <!-- Start Row 7 -->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:gravity="center_horizontal">
+
+            <ImageView android:src="@drawable/help"
+                android:clickable="true"
+                android:id="@+id/TViewHelp"
+                android:layout_marginTop="2dp"
+                android:layout_width="100dp"
+                android:layout_height="90dp" />
+
+            <ImageView android:src="@drawable/rating"
+                android:clickable="true"
+                android:layout_marginTop="2dp"
+                android:id="@+id/picRating"
+                android:layout_width="100dp"
+                android:layout_height="90dp"
+                />
+
+        </TableRow>
+        <!-- End Row 7 -->
+
+
+    </TableLayout>
+</RelativeLayout>

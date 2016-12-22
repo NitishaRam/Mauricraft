@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/swbg">
+
+    <ImageView
+        android:src="@drawable/icon"
+        android:id="@+id/iBtnHome"
+        android:layout_height="70dp"
+        android:layout_width="80dp"
+        android:layout_marginBottom="1dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:clickable="true" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="85dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:text="@string/TvCustomerReg"
+        android:id="@+id/textView"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:textColor="#070707"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:background="#cdcdcd" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TvF_name"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/textView2"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#070707"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TvL_name"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/LNameTxt"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#070707"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TvPhone"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/NICTxt"
+        android:layout_below="@+id/LNameTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#070707"
+        android:textSize="21sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TvGender"
+        android:layout_marginLeft="5dp"
+        android:id="@+id/AdrTxt"
+        android:layout_below="@+id/NICTxt"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="39dp"
+        android:textColor="#070707"
+        android:textSize="21sp" />
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bSubmit"
+        android:id="@+id/button"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="50dp"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:background="#1f35fa"
+        android:textSize="17sp"
+        android:minHeight="45dp"
+        android:minWidth="100dp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:layout_marginRight="5dp"
+        android:ems="10"
+        android:id="@+id/fName"
+        android:layout_alignBottom="@+id/NICTxt"
+        android:layout_alignEnd="@+id/btnExit"
+        android:layout_toEndOf="@+id/NICTxt" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/lName"
+        android:ems="10"
+        android:layout_above="@+id/LNameTxt"
+        android:layout_alignEnd="@+id/fName"
+        android:layout_alignStart="@+id/fName" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/Phone"
+        android:ems="10"
+        android:layout_above="@+id/NICTxt"
+        android:layout_alignStart="@+id/fName"
+        android:layout_alignEnd="@+id/fName"
+        android:inputType="textPersonName|text" />
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignTop="@+id/AdrTxt"
+        android:layout_alignStart="@+id/button"
+        android:layout_above="@+id/button">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:id="@+id/radioButton2"
+            android:checked="false" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:id="@+id/radioButton"
+            android:checked="false" />
+    </RadioGroup>
+
+
+</RelativeLayout>

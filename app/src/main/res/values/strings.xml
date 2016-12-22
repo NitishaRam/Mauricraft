@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Mauricraft</string>
+    <string name="exit">EXIT</string>
+    <string name="bLogin">Log In</string>
+    <string name="bRegister">REGISTER</string>
+    <string name="bSubmit">SUBMIT</string>
+    <string name="menu">~MENU~</string>
+    <string name="menu_profile">Edit Profile</string>
+    <string name="menu_camera">Camera</string>
+    <string name="menu_view">View Uploads</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_rating">Ratings</string>
+    <!--N!-->
+    <string name="nextBtn">Next</string>
+    <string name="bSave">SAVE</string>
+    <string name="NIC">NIC :</string>
+    <string name="address">Address :</string>
+    <string name="confirmP">Confirm Password :</string>
+    <string name="PdType">Product Type :</string>
+    <string name="wLoc">Work Location :</string>
+    <string name="desc">Short Description... </string>
+    <string name="hUsername">Username :</string>
+    <string name="hPassword">Password:</string>
+    <string name="TvF_name">First Name :</string>
+    <string name="TvL_name">Last Name :</string>
+    <string name="fullName">Name :</string>
+    <string name="TvPhone">Phone Number :</string>
+    <string name="TvGender">Gender :</string>
+    <string name="TvRegisterAsCustomer">Click here for customer registration</string>
+    <string name="TvCustomerReg">Customer Registration</string>
+    <!--============================================!-->
+    <string name="TvArtisanReg">Artisan Registration</string>
+</resources>
