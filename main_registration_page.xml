@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/swbg">
+
+
+    <GridView
+
+        android:layout_width="fill_parent"
+        android:layout_height="125dp"
+        android:columnWidth="90dp"
+        android:gravity="center"
+        android:horizontalSpacing="10dp"
+        android:stretchMode="columnWidth"
+        android:verticalSpacing="10dp"
+        android:background="#7fdbdbd3"
+        android:id="@+id/gridView"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:choiceMode="none"
+        tools:listitem="@layout/abc_action_menu_layout"
+        android:minHeight="300dp"
+        android:numColumns="90"
+        android:layout_marginTop="150dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etusername"
+        android:hint="@string/hUsername"
+        android:layout_alignTop="@+id/gridView"
+        android:layout_alignStart="@+id/gridView"
+        android:layout_alignEnd="@+id/gridView"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:inputType="text"
+        android:minHeight="60dp"
+        android:textColor="#070707"
+        android:textSize="25sp"
+        android:textColorHint="#777474" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/editText2"
+        android:hint="@string/hPassword"
+        android:layout_below="@+id/etusername"
+        android:layout_alignStart="@+id/etusername"
+        android:layout_alignEnd="@+id/etusername"
+        android:textSize="25sp"
+        android:minHeight="55dp"
+        android:textColor="#070707"
+        android:textColorHint="#777474" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bLogin"
+        android:id="@+id/btnLogin"
+        android:textSize="25sp"
+        android:minHeight="60dp"
+        android:background="#b6b3b3"
+        android:layout_below="@+id/gridView"
+        android:layout_alignStart="@+id/gridView"
+        android:layout_alignEnd="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bRegister"
+        android:id="@+id/btnRegister"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="55dp"
+        android:textSize="25sp"
+        android:textAlignment="center"
+        android:minHeight="50dp"
+        android:textStyle="normal"
+        android:background="#b6b3b3"
+        android:minWidth="150dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TvRegisterAsCustomer"
+        android:id="@+id/customerReg"
+        android:layout_below="@+id/btnLogin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="85dp"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:textColor="#070707" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/menu_help"
+        android:id="@+id/TviewHelp"
+        android:textSize="20sp"
+        android:clickable="true"
+        android:textColor="#070707"
+        android:layout_marginTop="42dp"
+        android:layout_below="@+id/customerReg"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic" />
+
+
+</RelativeLayout>
